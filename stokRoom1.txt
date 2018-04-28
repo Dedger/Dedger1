@@ -1,0 +1,90 @@
+using System;
+using System.Collections;
+
+namespace StokRoom2
+{
+    public class StokRoom
+    {
+        public const int volume = 50;//Объём склада
+    }
+    public class Goods
+    {
+        public string Name { get; set; }
+        public int Price { get; set; }
+        public int Volume { get; set; }
+    }
+    public class BasicItems : Goods
+    {
+        public int ShelfLife { get; set; }
+    }
+
+    public class Wood : BasicItems
+    {
+        public BasicItems wood = new BasicItems { Name = "Wood", Price = 10, ShelfLife = 5, Volume = 3 };
+
+        string Name;
+        int Price;
+        int ShelfLife;
+        int Volume;
+
+        public Wood()
+        {
+            Name = wood.Name;
+            Price = wood.Price;
+            ShelfLife = wood.ShelfLife;
+            Volume = wood.Volume;
+        }
+    }
+    public class Stoune : BasicItems
+    {
+        public BasicItems stoune = new BasicItems { Name = "Stoune", Price = 5, ShelfLife = 10, Volume = 2 };
+
+        string Name;
+        int Price;
+        int ShelfLife;
+        int Volume;
+
+        public Stoune()
+        {
+            Name = stoune.Name;
+            Price = stoune.Price;
+            ShelfLife = stoune.ShelfLife;
+            Volume = stoune.Volume;
+        }
+    }
+    public class Bricks : BasicItems
+    {
+        public BasicItems bricks = new BasicItems { Name = "Bricks", Price = 10, ShelfLife = 10, Volume = 2 };
+
+        string Name;
+        int Price;
+        int ShelfLife;
+        int Volume;
+
+        public Bricks()
+        {
+            Name = bricks.Name;
+            Price = bricks.Price;
+            ShelfLife = bricks.ShelfLife;
+            Volume = bricks.Volume;
+        }
+    }
+
+
+    class Create
+    {
+
+    }
+    class Show
+    {
+
+    }
+    class Add
+    {
+
+    }
+    class Delete
+    {
+
+    }
+}
